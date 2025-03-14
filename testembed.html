@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FloSports Live Event</title>
+
+    <!-- Open Graph Meta Tags for Facebook -->
+    <meta property="og:title" content="🏆 Live: FloSports Wrestling Championship">
+    <meta property="og:description"
+        content="Catch all the action from the FloSports Wrestling Championships! Live streaming now with exclusive coverage. 🤼‍♂️🔥">
+    <meta property="og:image" content="https://trimlite.com/wp-content/uploads/2014/09/logo.png">
+    <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://flosports.tv/live-wrestling-stream"> <!-- Page URL -->
+    <meta property="og:type" content="website">
+
     <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
     <style>
         body {
@@ -70,9 +80,9 @@
 <body>
 
     <div class="embed-container">
-        <h2>🏆 Live: FloWrestling Championship</h2>
-        <p>Catch all the action from the FloWrestling Championships! Live streaming now with exclusive coverage. 🤼‍♂️🔥
-        </p>
+        <h2>🏆 Live: FloSports Wrestling Championship</h2>
+        <p>Catch all the action from the FloSports Wrestling Championships! Live streaming now with exclusive coverage.
+            🤼‍♂️🔥</p>
 
         <div class="video-container">
             <video id="my-video" class="video-js vjs-default-skin" controls preload="auto">
@@ -91,8 +101,8 @@
         });
 
         function shareOnFacebook() {
-            var videoUrl = encodeURIComponent("https://flosports.tv/live-wrestling-stream");
-            var shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${videoUrl}`;
+            var pageUrl = encodeURIComponent("https://flosports.tv/live-wrestling-stream"); // Replace with actual hosted page URL
+            var shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
             window.open(shareUrl, '_blank', 'width=600,height=400');
         }
     </script>
